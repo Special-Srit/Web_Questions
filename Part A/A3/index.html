@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  #toggle { display: none; }
+
+  .page {
+    min-height: 100vh;
+    background: #fff;
+    transition: background 0.4s;
+    display: flex;
+    align-items: flex-start;
+    padding: 40px;
+  }
+
+  .toggle-label {
+    width: 60px; height: 30px;
+    background: #ccc;
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    transition: background 0.4s;
+  }
+
+  .toggle-label::after {
+    content: '';
+    position: absolute;
+    width: 24px; height: 24px;
+    background: #fff;
+    border-radius: 50%;
+    top: 3px; left: 3px;
+    transition: all 0.4s;
+  }
+
+  /* Dark mode triggers */
+  #toggle:checked + .page { background: #222; }
+  #toggle:checked + .page .toggle-label { background: #1a237e; }
+  #toggle:checked + .page .toggle-label::after {
+    transform: translateX(30px);
+    background: yellow;
+  }
+</style>
+</head>
+<body>
+  <input type="checkbox" id="toggle">
+  <div class="page">
+    <label class="toggle-label" for="toggle"></label>
+  </div>
+</body>
+</html>
