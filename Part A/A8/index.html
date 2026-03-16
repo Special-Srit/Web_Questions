@@ -14,8 +14,8 @@
         justify-content: center;
         border-radius: 15px;
         margin: auto;
-        width: 650px;
-        height: 700px;
+        width: 850px;
+        height: 1000px;
     }
     .header{
         background-color: #333333;
@@ -52,6 +52,43 @@
     p{
         background-color: #ffffff;
     }
+    .price, .size{
+        color: #9c9db2;
+    }
+    .plus, .minus{
+        width: 20%;
+        height: 20%;
+        border-radius: 5px;
+        border: 2px solid #f2f2f2;
+        background-color: white;
+        justify-content: center;
+        display: flex; 
+        align-items: center;
+    }
+    .close{
+        width: 27%;
+        border: 2px solid red;
+        height: 20%;
+        border-radius: 5px;
+        background-color: rgb(255, 0, 0);
+        justify-content: center;
+        display: flex; 
+        align-items: center;
+        margin-left: 17px;
+        border-radius: 100%;
+    }
+    hr{
+        border: 1px solid #f4f4f4;
+        margin: 0px;
+    }
+    .total{
+        width: 100%;
+        height: 15%;
+        display: flex;
+    }
+    .total_price{
+        display: flex;
+    }
 </style>
 <body>
     <div class="card">
@@ -60,14 +97,83 @@
         </div>
         <div class="list">
             <img src="C:\Users\user\Desktop\project\Web_Questions\Resources\2026년도 웹디자인 및 개발 A모듈 공개과제_선수제공파일\선수제공파일\A8\images\tshirt.jpg" alt="" class="img">
-            <div style="background-color: #ffffff;">
+            <div style="background-color: #ffffff; margin-right: 2%;">
                 <p class="head">WorldSkills 공식 티셔츠</p>
                 <p class="price" style="margin-bottom: 2%;">색상: 네이비</p>
                 <p class="size" style="margin-top: 2%;">사이즈: L</p>
             </div>
-            
+            <div style="background-color: #ffffff; justify-content: center; display: flex; align-items: center; margin-left: 15%;">
+                <button class="minus" style="padding: 15px; margin-right: 20px;">
+                    <p>-</p>
+                </button>
+                <h3>2</h3>
+                <button class="plus" style="padding: 15px; margin-left: 20px;">
+                    <p>+</p>
+                </button>
+            </div>
+            <div style="background-color: #ffffff; justify-content: center; display: flex; align-items: center; margin-left: 3%;">
+                <h3 style=" background-color: white; justify-content: center; margin: 0px; width: 100px;">25,000원</h3>
+                <button class="close">
+                    <p style="color: white; font-weight: bold; background-color: red; justify-content: center; display: flex; align-items: center;">X</p>
+                </button>
+            </div>
         </div>
         <hr>
+
+        <div class="list">
+            <img src="C:\Users\user\Desktop\project\Web_Questions\Resources\2026년도 웹디자인 및 개발 A모듈 공개과제_선수제공파일\선수제공파일\A8\images\book.jpg" alt="" class="img">
+            <div style="background-color: #ffffff; margin-right: 9%;">
+                <p class="head">기능경기 가이드북</p>
+                <p class="price" style="margin-bottom: 2%;">종류: 웹디자인</p>
+                <p class="size" style="margin-top: 2%;">2026년 최신판</p>
+            </div>
+            <div style="background-color: #ffffff; justify-content: center; display: flex; align-items: center; margin-left: 15%;">
+                <button class="minus" style="padding: 15px; margin-right: 20px;">
+                    <p>-</p>
+                </button>
+                <h3>1</h3>
+                <button class="plus" style="padding: 15px; margin-left: 20px;">
+                    <p>+</p>
+                </button>
+            </div>
+            <div style="background-color: #ffffff; justify-content: center; display: flex; align-items: center; margin-left: 3%;">
+                <h3 style=" background-color: white; justify-content: center; margin: 0px; width: 100px;">15,000원</h3>
+                <button class="close">
+                    <p style="color: white; font-weight: bold; background-color: red; justify-content: center; display: flex; align-items: center;">X</p>
+                </button>
+            </div>
+        </div>
+        <hr>
+        <div class="list">
+            <img src="C:\Users\user\Desktop\project\Web_Questions\Resources\2026년도 웹디자인 및 개발 A모듈 공개과제_선수제공파일\선수제공파일\A8\images\laptop-case.jpg" alt="" class="img">
+            <div style="background-color: #ffffff;">
+                <p class="head">WorldSkills 노트북 파우치</p>
+                <p class="price" style="margin-bottom: 2%;">색상: 블랙</p>
+                <p class="size" style="margin-top: 2%;">15인치 호환</p>
+            </div>
+            <div style="background-color: #ffffff; justify-content: center; display: flex; align-items: center; margin-left: 15%;">
+                <button class="minus" style="padding: 15px; margin-right: 20px;">
+                    <p>-</p>
+                </button>
+                <h3>1</h3>
+                <button class="plus" style="padding: 15px; margin-left: 20px;">
+                    <p>+</p>
+                </button>
+            </div>
+            <div style="background-color: #ffffff; justify-content: center; display: flex; align-items: center; margin-left: 3%;">
+                <h3 style=" background-color: white; justify-content: center; margin: 0px; width: 100px;">35,000원</h3>
+                <button class="close">
+                    <p style="color: white; font-weight: bold; background-color: red; justify-content: center; display: flex; align-items: center;">X</p>
+                </button>
+            </div>
+        </div>
+        <hr>
+        <div class="total">
+            <div class="total_price">
+                <p style="margin-left: 20%; width: 100px; background-color: #f8f9fa; margin-top: 10%; font-weight: 500;">상품 금액</p>
+                <p style="margin-left: 20%; width: 100px; background-color: #f8f9fa; margin-top: 10%; font-weight: 500;">75,000원</p>
+            </div>
+        </div>
     </div>
 </body>
 </html>
